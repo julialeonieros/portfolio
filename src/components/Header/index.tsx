@@ -1,2 +1,2 @@
-import Header from "./Header";
-export default Header;
+import StyledHeader from "./Header";
+export default StyledHeader;
