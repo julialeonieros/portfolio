@@ -6,6 +6,19 @@ const theme = createTheme({
     text: {
       primary: '#1c1b1f',
     },
+    primary: {
+      main: '#024434',
+      light: '#F4F4F4',
+    },
+    secondary: {
+      light: '#fbe3eb',
+      main: '#f8cddb',
+      dark: '#E0707C',
+    },
+    background: {
+      default: '#fff',
+      paper: 'pink',
+    },
   },
   typography: {
     fontFamily: ['Montserrat', 'serif'].join(','),

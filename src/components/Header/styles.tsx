@@ -19,11 +19,18 @@ export const HeroImg = styled('header')(({ theme }) => ({
   },
 }));
 
-export const HeadingsContainer = styled(Box)(({ theme }) => ({
+export const IconsContainer = styled(Box)(() => ({
+  display: 'inline-block',
+  position: 'absolute',
+  top: '10%',
+  right: '10%',
+}));
+
+export const HeadingsContainer = styled(Box)(() => ({
   position: 'absolute',
   top: '50%',
   left: '10%',
-  color: '#FFF',
+  color: '#fff',
 }));
 
 export const SubHeading1 = styled('p')(({ theme }) => ({
@@ -45,7 +52,7 @@ export const SubHeading1 = styled('p')(({ theme }) => ({
 export const SubHeading2 = styled('p')(({ theme }) => ({
   fontSize: '2.8rem',
   fontWeight: 700,
-  marginTop: '7px',
+  marginTop: theme.spacing(2),
 
   [theme.breakpoints.down('md')]: {
     fontSize: '1.8rem',
