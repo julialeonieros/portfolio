@@ -1,15 +1,16 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-import image from '../../assets/forest.jpg';
+import backgroundImg from '../../assets/forest.jpg';
 
 export const HeroImg = styled('header')(({ theme }) => ({
   position: 'relative',
-  backgroundImage: `url(${image})`,
+  backgroundImage: `url(${backgroundImg})`,
   backgroundColor: '#024434',
   height: '600px',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
+  padding: '40px',
 
   [theme.breakpoints.down('md')]: {
     height: '450px',
@@ -19,18 +20,43 @@ export const HeroImg = styled('header')(({ theme }) => ({
   },
 }));
 
-export const IconsContainer = styled(Box)(() => ({
-  display: 'inline-block',
+export const HeaderContentContainer = styled(Box)(({ theme }) => ({
   position: 'absolute',
-  top: '10%',
-  right: '10%',
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  top: '60px',
+  right: 0,
+  bottom: 0,
+  left: 0,
+  width: '1100px',
+
+  [theme.breakpoints.down('lg')]: {
+    width: '80%',
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '88%',
+  },
+}));
+
+export const IconsContainer = styled(Box)(({ theme }) => ({
+  display: 'flex',
+  gap: theme.spacing(1),
+  position: 'absolute',
+  top: 0,
+  right: 0,
+  backgroundColor: theme.palette.primary.main,
+  padding: theme.spacing(1),
+
+  [theme.breakpoints.down('sm')]: {
+    backgroundColor: 'transparent',
+  },
 }));
 
 export const HeadingsContainer = styled(Box)(() => ({
   position: 'absolute',
-  top: '50%',
-  left: '10%',
+  top: 90,
   color: '#fff',
+  width: '80%',
 }));
 
 export const SubHeading1 = styled('p')(({ theme }) => ({
@@ -64,4 +90,24 @@ export const SubHeading2 = styled('p')(({ theme }) => ({
 
 export const Bold = styled('span')(() => ({
   fontWeight: 700,
+}));
+
+export const ProfileImg = styled('img')(({ theme }) => ({
+  position: 'absolute',
+  right: 0,
+  bottom: -30,
+  width: '280px',
+  height: '280px',
+  border: 'solid #fff 3px',
+  borderRadius: '50%',
+  backgroundColor: '#fff',
+
+  [theme.breakpoints.down('md')]: {
+    width: '200px',
+    height: '200px',
+  },
+  [theme.breakpoints.down('sm')]: {
+    width: '180px',
+    height: '180px',
+  },
 }));

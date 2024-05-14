@@ -1,10 +1,13 @@
 import { Typography } from '@mui/material';
+import profilePic from '../../assets/coffee.jpg';
 import IconLinks from '../IconLinks';
 import {
   Bold,
+  HeaderContentContainer,
   HeadingsContainer,
   HeroImg,
   IconsContainer,
+  ProfileImg,
   SubHeading1,
   SubHeading2,
 } from './styles';
@@ -12,16 +15,19 @@ import {
 const Header = () => {
   return (
     <HeroImg>
-      <HeadingsContainer>
-        <Typography variant='h1'>
-          PORTFOLIO: <Bold>JULIA ROS</Bold>
-        </Typography>
-        <SubHeading1> frontend developer</SubHeading1>
-        <SubHeading2>+ accessibility</SubHeading2>
-      </HeadingsContainer>
-      <IconsContainer>
-        <IconLinks />
-      </IconsContainer>
+      <HeaderContentContainer>
+        <IconsContainer>
+          <IconLinks />
+        </IconsContainer>
+        <HeadingsContainer>
+          <Typography variant='h1'>
+            PORTFOLIO: <Bold>JULIA ROS</Bold>
+          </Typography>
+          <SubHeading1> frontend developer</SubHeading1>
+          <SubHeading2>+ accessibility</SubHeading2>
+        </HeadingsContainer>
+        <ProfileImg src={profilePic} />
+      </HeaderContentContainer>
     </HeroImg>
   );
 };

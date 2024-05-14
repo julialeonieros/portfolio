@@ -1,8 +1,8 @@
-import { Container, IconLink } from './styles';
+import { IconLink } from './styles';
 
 const IconLinks = () => {
   return (
-    <Container>
+    <>
       <IconLink
         title='Länk till LinkedIn'
         href='https://www.linkedin.com/in/julia-ros-95023992/'
@@ -24,7 +24,7 @@ const IconLinks = () => {
       >
         <i className='fa-regular fa-envelope'></i>
       </IconLink>
-    </Container>
+    </>
   );
 };
 
