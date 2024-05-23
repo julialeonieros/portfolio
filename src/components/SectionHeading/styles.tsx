@@ -7,7 +7,9 @@ interface ColorProps {
   theme: Theme;
 }
 
-export const Background = styled(Box)(({ theme, background }: ColorProps) => ({
+export const Background = styled(Box, {
+  shouldForwardProp: (props) => props !== 'background',
+})(({ theme, background }: ColorProps) => ({
   padding: '4px 8px',
   backgroundColor: background ? theme.palette.primary.main : 'transparent',
   display: 'inline-block',
