@@ -17,6 +17,7 @@ const FeaturedProject = () => {
               src={project.src}
               heading={project.heading}
               description={project.description}
+              tags={project.tags}
             />
           </Grid>
         ))}

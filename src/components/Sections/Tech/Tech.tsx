@@ -1,7 +1,6 @@
-import { ListItem } from '@mui/material';
 import SectionHeading from '../../SectionHeading/SectionHeading';
 import { TextContainer } from '../Introduction/styles';
-import { StyledList, TechSection } from './styles';
+import { StyledList, StyledListItem, TechSection } from './styles';
 
 const Tech = () => {
   const techSkills = [
@@ -26,11 +25,7 @@ const Tech = () => {
         <SectionHeading heading='tech' background={true} />
         <StyledList>
           {techSkills.map((skill) => {
-            return (
-              <ListItem key={skill} sx={{ padding: '1px 3px', width: 'auto' }}>
-                {skill}
-              </ListItem>
-            );
+            return <StyledListItem key={skill}>{skill}</StyledListItem>;
           })}
         </StyledList>
       </TextContainer>
