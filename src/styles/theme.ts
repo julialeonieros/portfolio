@@ -36,11 +36,20 @@ const theme = createTheme({
         fontSize: '0.85rem',
       },
     },
+    h3: {
+      fontFamily: ['Roboto', 'sans-serif'].join(','),
+      fontWeight: 700,
+      fontSize: '17px',
+      color: '#024434',
+      marginTop: '17px',
+      lineHeight: '29px',
+      textTransform: 'uppercase',
+    },
     body1: {
-      fontSize: '1rem',
+      fontSize: '1.06rem',
       fontWeight: 400,
       lineHeight: '1.8rem',
-      // letterSpacing: '0.01em',
+      letterSpacing: '0.01em',
     },
   },
 });
