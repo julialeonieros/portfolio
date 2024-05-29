@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box';
 import ProjectDescription from './ProjectDescription/ProjectDescription';
 import ProjectImg from './ProjectImg/ProjectImg';
+import GitHubTag from './TechTag/GitHubTag/GitHubTag';
 import TechTag from './TechTag/TechTag';
 import { StyledLink, StyledListItem, TagsContainer } from './styles';
 
@@ -11,6 +12,7 @@ interface ProjectProps {
   heading: string;
   description: string;
   tags: string[];
+  gitHubHref: string;
 }
 
 const Project = ({
@@ -20,6 +22,7 @@ const Project = ({
   heading,
   description,
   tags,
+  gitHubHref,
 }: ProjectProps) => {
   return (
     <Box>
@@ -35,6 +38,7 @@ const Project = ({
             </StyledListItem>
           );
         })}
+        <GitHubTag href={gitHubHref} />
       </TagsContainer>
     </Box>
   );

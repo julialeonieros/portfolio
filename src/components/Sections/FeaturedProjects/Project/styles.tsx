@@ -13,7 +13,7 @@ export const StyledLink = styled(Link)(({ theme }) => ({
 
 export const TagsContainer = styled(List)(({ theme }) => ({
   marginTop: theme.spacing(2),
-  display: 'flex',
+  display: 'inline-flex',
   flexWrap: 'wrap',
   gap: 6,
   padding: 0,

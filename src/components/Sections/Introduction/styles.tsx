@@ -1,14 +1,7 @@
-import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 
-export const SummarySection = styled('section')(({ theme }) => ({
+export const IntroSection = styled('section')(({ theme }) => ({
   backgroundColor: theme.palette.primary.light,
-  padding: '80px 0 60px',
-}));
-
-export const TextContainer = styled(Box)(() => ({
-  width: '600px',
-  margin: 'auto',
 }));
 
 export const Line = styled('span')(({ theme }) => ({

@@ -61,6 +61,6 @@ export const projectsData: ProjectsInterface[] = [
     description:
       'My first web project: a responsive web site for a fictive magazine, using HTML and CSS.',
     tags: [Tech.HTML, Tech.CSS, Tech.Design],
-    gitHubHref: 'https://github.com/julialeonieros/project-todos',
+    gitHubHref: 'https://github.com/julialeonieros/project-news-site',
   },
 ];

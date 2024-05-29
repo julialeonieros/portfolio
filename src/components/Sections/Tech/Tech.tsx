@@ -1,5 +1,5 @@
+import { NarrowContentContainer } from '../../ContenContainers/styles';
 import SectionHeading from '../../SectionHeading/SectionHeading';
-import { TextContainer } from '../Introduction/styles';
 import { StyledList, StyledListItem, TechSection } from './styles';
 
 const Tech = () => {
@@ -21,14 +21,14 @@ const Tech = () => {
 
   return (
     <TechSection>
-      <TextContainer>
+      <NarrowContentContainer>
         <SectionHeading heading='tech' background={true} />
         <StyledList>
           {techSkills.map((skill) => {
             return <StyledListItem key={skill}>{skill}</StyledListItem>;
           })}
         </StyledList>
-      </TextContainer>
+      </NarrowContentContainer>
     </TechSection>
   );
 };

@@ -1,10 +1,11 @@
 import { Typography } from '@mui/material';
-import { Circle, Line, SummarySection, TextContainer } from './styles';
+import { NarrowContentContainer } from '../../ContenContainers/styles';
+import { Circle, IntroSection, Line } from './styles';
 
 const Introduction = () => {
   return (
-    <SummarySection>
-      <TextContainer>
+    <IntroSection>
+      <NarrowContentContainer>
         <Typography>
           <Line />
           <Circle />
@@ -17,8 +18,8 @@ const Introduction = () => {
           the municipality, which has made me customer oriented, structured and
           flexible.
         </Typography>
-      </TextContainer>
-    </SummarySection>
+      </NarrowContentContainer>
+    </IntroSection>
   );
 };
 
