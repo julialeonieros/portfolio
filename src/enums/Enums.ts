@@ -1,11 +1,14 @@
 export enum Tech {
   HTML = 'HTML',
   CSS = 'CSS',
+  JS = 'JavaScript',
   React = 'React',
   JSX = 'JSX',
   Redux = 'Redux',
-  Material_UI = 'MUI',
+  MUI = 'MUI',
   APIs = 'API:s',
   MongoDB = 'MongoDB',
-  Design = 'Design',
+  Design = 'UX/UI-design',
+  React_Native = 'React Native',
+  Styled_Components = 'Styled Components',
 }

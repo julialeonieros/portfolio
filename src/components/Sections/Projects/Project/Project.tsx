@@ -8,11 +8,12 @@ import { StyledLink, StyledListItem, TagsContainer } from './styles';
 interface ProjectProps {
   title: string;
   href: string;
-  src: string;
+  src?: string;
   heading: string;
   description: string;
   tags: string[];
   gitHubHref: string;
+  sx?: object;
 }
 
 const Project = ({
@@ -23,11 +24,12 @@ const Project = ({
   description,
   tags,
   gitHubHref,
+  sx,
 }: ProjectProps) => {
   return (
-    <Box>
+    <Box sx={sx}>
       <StyledLink title={title} href={href}>
-        <ProjectImg src={src} />
+        {src && <ProjectImg src={src} />}
         <ProjectDescription heading={heading} description={description} />
       </StyledLink>
       <TagsContainer>

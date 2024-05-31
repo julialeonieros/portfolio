@@ -1,8 +1,8 @@
 import Grid from '@mui/material/Unstable_Grid2';
-import { projectsData } from '../../../assets/projects/projectsData';
-import { WideContentContainer } from '../../ContenContainers/styles';
-import SectionHeading from '../../SectionHeading/SectionHeading';
-import Project from './Project/Project';
+import { projectsData } from '../../../../assets/projects/projectsData';
+import { WideContentContainer } from '../../../ContenContainers/styles';
+import SectionHeading from '../../../SectionHeading/SectionHeading';
+import Project from '../Project/Project';
 import { FeaturedProjectsSection } from './styles';
 
 const FeaturedProject = () => {

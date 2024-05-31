@@ -19,14 +19,14 @@ export const projectsData: ProjectsInterface[] = [
     title: 'link to recipe site',
     href: 'https://friluftsmat.netlify.app/',
     src: recipesImg,
-    heading: 'the final project: recipe bank with post-function',
+    heading: 'the final project: recipe bank with post-function.',
     description:
       'The final project, done pair-programming. A recipe site with filtering and post-function. Frontend built with React, Redux, Styled components, Material UI, Cloudinary and HTML/CSS/JSX. Backend built with RESTful API, Express, MongoDB and Mongoose.',
     tags: [
       Tech.React,
       Tech.Redux,
       Tech.JSX,
-      Tech.Material_UI,
+      Tech.MUI,
       Tech.APIs,
       Tech.MongoDB,
       Tech.Design,
@@ -37,7 +37,7 @@ export const projectsData: ProjectsInterface[] = [
     title: 'link to todo app',
     href: 'https://zealous-ardinghelli-8278dd.netlify.app/',
     src: todoImg,
-    heading: 'todo app built with react',
+    heading: 'todo app built with react.',
     description:
       'Responsive app where you can write your daily tasks. Built with React using HTML, CSS/Styled Components, JSX, Redux/Redux Toolkit and Lottie Animation.',
     tags: [Tech.React, Tech.Redux, Tech.JSX, Tech.CSS, Tech.Design],

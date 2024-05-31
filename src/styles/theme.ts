@@ -8,7 +8,6 @@ const theme = createTheme({
     },
     primary: {
       main: '#024434',
-      light: '#F4F4F4',
     },
     secondary: {
       light: '#fbe3eb',
@@ -17,7 +16,7 @@ const theme = createTheme({
     },
     background: {
       default: '#fff',
-      paper: 'pink',
+      paper: '#F4F4F4',
     },
   },
   typography: {
