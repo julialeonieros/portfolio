@@ -1,6 +1,7 @@
-import { NarrowContentContainer } from '../../ContenContainers/styles';
+import { useTheme } from '@mui/material/styles';
 import SectionHeading from '../../SectionHeading/SectionHeading';
-import { StyledList, StyledListItem, TechSection } from './styles';
+import { NarrowContentContainer, Section } from '../styles';
+import { StyledList, StyledListItem } from './styles';
 
 const Tech = () => {
   const techSkills = [
@@ -19,8 +20,10 @@ const Tech = () => {
     'Material UI',
   ];
 
+  const theme = useTheme();
+
   return (
-    <TechSection>
+    <Section theme={theme} background={'white'}>
       <NarrowContentContainer>
         <SectionHeading heading='tech' background={true} />
         <StyledList>
@@ -29,7 +32,7 @@ const Tech = () => {
           })}
         </StyledList>
       </NarrowContentContainer>
-    </TechSection>
+    </Section>
   );
 };
 

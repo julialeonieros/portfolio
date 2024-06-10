@@ -1,13 +1,14 @@
 import Grid from '@mui/material/Unstable_Grid2';
+import { useTheme } from '@mui/material/styles';
 import { projectsData } from '../../../../assets/projects/projectsData';
-import { WideContentContainer } from '../../../ContenContainers/styles';
 import SectionHeading from '../../../SectionHeading/SectionHeading';
+import { Section, WideContentContainer } from '../../styles';
 import Project from '../Project/Project';
-import { FeaturedProjectsSection } from './styles';
 
 const FeaturedProject = () => {
+  const theme = useTheme();
   return (
-    <FeaturedProjectsSection>
+    <Section theme={theme} background={'grey'}>
       <WideContentContainer>
         <SectionHeading heading='featured projects' background={true} />
         <Grid container spacing={6} mt={2}>
@@ -26,7 +27,7 @@ const FeaturedProject = () => {
           ))}
         </Grid>
       </WideContentContainer>
-    </FeaturedProjectsSection>
+    </Section>
   );
 };
 

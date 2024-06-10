@@ -1,9 +1,5 @@
 import { styled } from '@mui/material/styles';
 
-export const IntroSection = styled('section')(({ theme }) => ({
-  backgroundColor: theme.palette.background.paper,
-}));
-
 export const Line = styled('span')(({ theme }) => ({
   display: 'inline-block',
   width: '50px',

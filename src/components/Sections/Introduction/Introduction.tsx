@@ -1,10 +1,12 @@
 import { Typography } from '@mui/material';
-import { NarrowContentContainer } from '../../ContenContainers/styles';
-import { Circle, IntroSection, Line } from './styles';
+import { useTheme } from '@mui/material/styles';
+import { NarrowContentContainer, Section } from '../styles';
+import { Circle, Line } from './styles';
 
 const Introduction = () => {
+  const theme = useTheme();
   return (
-    <IntroSection>
+    <Section theme={theme} background={'grey'}>
       <NarrowContentContainer>
         <Typography>
           <Line />
@@ -19,7 +21,7 @@ const Introduction = () => {
           flexible.
         </Typography>
       </NarrowContentContainer>
-    </IntroSection>
+    </Section>
   );
 };
 

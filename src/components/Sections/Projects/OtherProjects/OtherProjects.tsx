@@ -1,12 +1,13 @@
+import { useTheme } from '@mui/material/styles';
 import { OtherProjectsData } from '../../../../assets/projects/otherProjectsData';
-import { WideContentContainer } from '../../../ContenContainers/styles';
 import SectionHeading from '../../../SectionHeading/SectionHeading';
+import { Section, WideContentContainer } from '../../styles';
 import Project from '../Project/Project';
-import { OtherProjectsSection } from './styles';
 
 const OtherProjects = () => {
+  const theme = useTheme();
   return (
-    <OtherProjectsSection>
+    <Section theme={theme} background={'grey'}>
       <WideContentContainer sx={{ paddingTop: '35px' }}>
         <SectionHeading heading='other projects' background={false} />
         {OtherProjectsData.map((project) => (
@@ -21,7 +22,7 @@ const OtherProjects = () => {
           />
         ))}
       </WideContentContainer>
-    </OtherProjectsSection>
+    </Section>
   );
 };
 

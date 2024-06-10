@@ -1,14 +1,17 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import tipsImage from '../../../assets/desktop.jpg';
 import nativeImage from '../../../assets/mobile_app.jpg';
-import { NarrowContentContainer } from '../../ContenContainers/styles';
+
+import { useTheme } from '@mui/material/styles';
 import SectionHeading from '../../SectionHeading/SectionHeading';
+import { NarrowContentContainer, Section } from '../styles';
 import Article from './Article';
-import { ArticlesSection, Italic } from './styles';
+import { Italic } from './styles';
 
 const Articles = () => {
+  const theme = useTheme();
   return (
-    <ArticlesSection>
+    <Section theme={theme} background={'white'}>
       <NarrowContentContainer sx={{ paddingLeft: 0, paddingRight: 0 }}>
         <SectionHeading heading='articles' background={true} />
         <Grid container spacing={8} mt={3}>
@@ -40,7 +43,7 @@ const Articles = () => {
           />
         </Grid>
       </NarrowContentContainer>
-    </ArticlesSection>
+    </Section>
   );
 };
 
