@@ -1,4 +1,4 @@
-import { ImgWrapper, StyledImg } from './styles';
+import { ImageWrapper, StyledImage } from './styles';
 
 interface ProjectImgProps {
   src: string;
@@ -6,9 +6,9 @@ interface ProjectImgProps {
 
 const ProjectImg = ({ src }: ProjectImgProps) => {
   return (
-    <ImgWrapper>
-      <StyledImg alt='' src={src} />
-    </ImgWrapper>
+    <ImageWrapper>
+      <StyledImage alt='' src={src} />
+    </ImageWrapper>
   );
 };
 

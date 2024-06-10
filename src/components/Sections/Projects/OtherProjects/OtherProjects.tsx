@@ -8,10 +8,7 @@ const OtherProjects = () => {
   return (
     <OtherProjectsSection>
       <WideContentContainer sx={{ paddingTop: '35px' }}>
-        <SectionHeading
-          heading='other projects'
-          background={false}
-        ></SectionHeading>
+        <SectionHeading heading='other projects' background={false} />
         {OtherProjectsData.map((project) => (
           <Project
             title={project.title}

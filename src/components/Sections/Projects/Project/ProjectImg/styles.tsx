@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 
-export const ImgWrapper = styled(Box)(({ theme }) => ({
+export const ImageWrapper = styled(Box)(({ theme }) => ({
   position: 'relative',
   overflow: 'hidden',
   height: '220px',
@@ -15,7 +15,7 @@ export const ImgWrapper = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const StyledImg = styled('img')(() => ({
+export const StyledImage = styled('img')(() => ({
   position: 'absolute',
   objectFit: 'cover',
   width: '100%',
