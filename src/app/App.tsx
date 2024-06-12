@@ -1,6 +1,5 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
-
 import Header from '../components/Header';
 import Articles from '../components/Sections/Articles/Articles';
 import Introduction from '../components/Sections/Introduction/Introduction';

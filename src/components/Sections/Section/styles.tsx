@@ -12,20 +12,18 @@ const backgroundColors = (theme: Theme) => ({
   pink: theme.palette.secondary.dark,
 });
 
-export const Section = styled('section')(
+export const StyledSection = styled('section')(
   ({ background, theme }: SectionProps) => ({
     backgroundColor: backgroundColors(theme)[background],
   })
 );
 
-export const NarrowContentContainer = styled(Box)(() => ({
-  maxWidth: '640px',
-  padding: '60px 24px 40px',
-  margin: 'auto',
-}));
+interface ContainerProps {
+  width: string;
+}
 
-export const WideContentContainer = styled(Box)(() => ({
-  maxWidth: '800px',
+export const ContentContainer = styled(Box)(({ width }: ContainerProps) => ({
+  maxWidth: width === 'narrow' ? '640px' : '800px',
   margin: 'auto',
   padding: '60px 24px 40px',
 }));

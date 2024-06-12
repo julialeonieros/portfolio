@@ -1,48 +1,46 @@
 import Grid from '@mui/material/Unstable_Grid2';
 import tipsImage from '../../../assets/desktop.jpg';
 import nativeImage from '../../../assets/mobile_app.jpg';
-
-import { useTheme } from '@mui/material/styles';
-import SectionHeading from '../../SectionHeading/SectionHeading';
-import { NarrowContentContainer, Section } from '../styles';
+import Section from '../Section/Section';
 import Article from './Article';
 import { Italic } from './styles';
 
 const Articles = () => {
-  const theme = useTheme();
   return (
-    <Section theme={theme} background={'white'}>
-      <NarrowContentContainer sx={{ paddingLeft: 0, paddingRight: 0 }}>
-        <SectionHeading heading='articles' background={true} />
-        <Grid container spacing={8} mt={3}>
-          <Article
-            href='https://julia-leonie-ros.medium.com/tips-for-shy-coders-196c1779bfc9'
-            src={tipsImage}
-            dateWritten='march 2021'
-            heading={
-              <>
-                Tips for shy coders:{' '}
-                <Italic>
-                  Some thoughts after two months on a frontend bootcamp
-                </Italic>
-              </>
-            }
-            description='So, about six months ago I got an email from Technigo telling me
-            they’ve accepted me into their bootcamp; 24 weeks of learning
-            HTML/CSS, JavaScript, React, JSX (and a bunch of things I’d never
-            even heard of), at a very high pace, with the goal of completely
-            changing career ...'
-          />
-          <Article
-            href='https://www.technigo.io/explained/what-is-react-native'
-            src={nativeImage}
-            dateWritten='2021'
-            heading='What is React Native?'
-            description={`An introduction to React Native. Written for Technigo and Kry's platform "Explained"; articles explaining 
-            technical concepts for beginners.`}
-          />
-        </Grid>
-      </NarrowContentContainer>
+    <Section
+      width='narrow'
+      background='white'
+      heading='articles'
+      headingBackground={true}
+    >
+      <Grid container spacing={8} mt={3}>
+        <Article
+          href='https://julia-leonie-ros.medium.com/tips-for-shy-coders-196c1779bfc9'
+          src={tipsImage}
+          dateWritten='march 2021'
+          heading={
+            <>
+              Tips for shy coders:{' '}
+              <Italic>
+                Some thoughts after two months on a frontend bootcamp
+              </Italic>
+            </>
+          }
+          description='So, about six months ago I got an email from Technigo telling me
+        they’ve accepted me into their bootcamp; 24 weeks of learning
+        HTML/CSS, JavaScript, React, JSX (and a bunch of things I’d never
+        even heard of), at a very high pace, with the goal of completely
+        changing career ...'
+        />
+        <Article
+          href='https://www.technigo.io/explained/what-is-react-native'
+          src={nativeImage}
+          dateWritten='2021'
+          heading='What is React Native?'
+          description={`An introduction to React Native. Written for Technigo and Kry's platform "Explained"; articles explaining 
+        technical concepts for beginners.`}
+        />
+      </Grid>
     </Section>
   );
 };

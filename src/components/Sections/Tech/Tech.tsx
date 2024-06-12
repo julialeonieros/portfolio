@@ -1,6 +1,4 @@
-import { useTheme } from '@mui/material/styles';
-import SectionHeading from '../../SectionHeading/SectionHeading';
-import { NarrowContentContainer, Section } from '../styles';
+import Section from '../Section/Section';
 import { StyledList, StyledListItem } from './styles';
 
 const Tech = () => {
@@ -20,18 +18,18 @@ const Tech = () => {
     'Material UI',
   ];
 
-  const theme = useTheme();
-
   return (
-    <Section theme={theme} background={'white'}>
-      <NarrowContentContainer>
-        <SectionHeading heading='tech' background={true} />
-        <StyledList>
-          {techSkills.map((skill) => {
-            return <StyledListItem key={skill}>{skill}</StyledListItem>;
-          })}
-        </StyledList>
-      </NarrowContentContainer>
+    <Section
+      width='narrow'
+      background='white'
+      heading='tech'
+      headingBackground={true}
+    >
+      <StyledList>
+        {techSkills.map((skill) => {
+          return <StyledListItem key={skill}>{skill}</StyledListItem>;
+        })}
+      </StyledList>
     </Section>
   );
 };
