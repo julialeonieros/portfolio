@@ -2,7 +2,7 @@ import magazineimg from '../../assets/projects/magazine.png';
 import moviesImg from '../../assets/projects/movies.png';
 import recipesImg from '../../assets/projects/recipes.png';
 import todoImg from '../../assets/projects/todo_app.png';
-import { Tech } from '../../enums/Enums';
+import { Tag } from '../../enums/Enums';
 
 export interface ProjectsInterface {
   title: string;
@@ -23,13 +23,13 @@ export const projectsData: ProjectsInterface[] = [
     description:
       'The final project, done pair-programming. A recipe site with filtering and post-function. Frontend built with React, Redux, Styled components, Material UI, Cloudinary and HTML/CSS/JSX. Backend built with RESTful API, Express, MongoDB and Mongoose.',
     tags: [
-      Tech.React,
-      Tech.Redux,
-      Tech.JSX,
-      Tech.MUI,
-      Tech.APIs,
-      Tech.MongoDB,
-      Tech.Design,
+      Tag.React,
+      Tag.Redux,
+      Tag.JSX,
+      Tag.MUI,
+      Tag.APIs,
+      Tag.MongoDB,
+      Tag.Design,
     ],
     gitHubHref: 'https://github.com/julialeonieros/outdoor-recipes',
   },
@@ -40,7 +40,7 @@ export const projectsData: ProjectsInterface[] = [
     heading: 'todo app built with react.',
     description:
       'Responsive app where you can write your daily tasks. Built with React using HTML, CSS/Styled Components, JSX, Redux/Redux Toolkit and Lottie Animation.',
-    tags: [Tech.React, Tech.Redux, Tech.JSX, Tech.CSS, Tech.Design],
+    tags: [Tag.React, Tag.Redux, Tag.JSX, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-todos',
   },
   {
@@ -50,7 +50,7 @@ export const projectsData: ProjectsInterface[] = [
     heading: 'movie site that fetches from api, built with react.',
     description:
       'A site that lists the most popular movies at the moment. Built with React using JSX and CSS.',
-    tags: [Tech.React, Tech.JSX, Tech.CSS, Tech.APIs],
+    tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.APIs],
     gitHubHref: 'https://github.com/julialeonieros/project-movies',
   },
   {
@@ -60,7 +60,7 @@ export const projectsData: ProjectsInterface[] = [
     heading: 'magazine site built with css/flexbox.',
     description:
       'My first web project: a responsive web site for a fictive magazine, using HTML and CSS.',
-    tags: [Tech.HTML, Tech.CSS, Tech.Design],
+    tags: [Tag.HTML, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-news-site',
   },
 ];

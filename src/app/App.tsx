@@ -5,6 +5,7 @@ import Articles from '../components/Sections/Articles/Articles';
 import Introduction from '../components/Sections/Introduction/Introduction';
 import FeaturedProject from '../components/Sections/Projects/FeaturedProjects/FeaturedProjects';
 import OtherProjects from '../components/Sections/Projects/OtherProjects/OtherProjects';
+import Skills from '../components/Sections/Skills/Skills';
 import Tech from '../components/Sections/Tech/Tech';
 import { theme } from '../styles/theme';
 import './App.css';
@@ -19,6 +20,7 @@ function App() {
       <FeaturedProject />
       <OtherProjects />
       <Articles />
+      <Skills />
     </ThemeProvider>
   );
 }

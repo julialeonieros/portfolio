@@ -1,4 +1,4 @@
-export enum Tech {
+export enum Tag {
   HTML = 'HTML',
   CSS = 'CSS',
   JS = 'JavaScript',

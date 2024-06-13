@@ -5,7 +5,7 @@ import { ContentContainer, StyledSection } from './styles';
 
 interface SectionProps {
   width: 'wide' | 'narrow';
-  background: 'white' | 'grey' | 'pink';
+  background: 'grey' | 'white' | 'pink';
   heading?: string;
   headingBackground: boolean;
   children: ReactNode;

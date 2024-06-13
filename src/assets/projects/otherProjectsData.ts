@@ -1,4 +1,4 @@
-import { Tech } from '../../enums/Enums';
+import { Tag } from '../../enums/Enums';
 
 export interface OtherProjectsInterface {
   title: string;
@@ -16,7 +16,7 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
     heading: 'react native app.',
     description:
       'A minimalist version of the magic 8-ball. Built with React Native using JSX, Styled Components and shake sensor.',
-    tags: [Tech.React_Native, Tech.Styled_Components, Tech.JSX, Tech.Design],
+    tags: [Tag.React_Native, Tag.Styled_Components, Tag.JSX, Tag.Design],
     gitHubHref:
       'https://github.com/julialeonieros/project-react-native-app/tree/shake-sensor',
   },
@@ -26,7 +26,7 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
     heading: 'happy thoughts.',
     description:
       'A more positive version of Twitter/X where you can post and read others happy thoughts. Built with React and using API:s.',
-    tags: [Tech.React, Tech.JSX, Tech.CSS, Tech.APIs],
+    tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.APIs],
     gitHubHref: 'https://github.com/julialeonieros/project-happy-thoughts',
   },
   {
@@ -35,7 +35,7 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
     heading: 'form site.',
     description:
       'Responsive site with a form designed to create book tips. Built with React',
-    tags: [Tech.React, Tech.JSX, Tech.CSS, Tech.Design],
+    tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-survey',
   },
   {
@@ -44,7 +44,7 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
     heading: 'weather app.',
     description:
       'Responsive web site that shows the weather, using HTML, CSS, vanilla JS and API:s.',
-    tags: [Tech.HTML, Tech.CSS, Tech.JS, Tech.APIs],
+    tags: [Tag.HTML, Tag.CSS, Tag.JS, Tag.APIs],
     gitHubHref: '',
   },
 ];
