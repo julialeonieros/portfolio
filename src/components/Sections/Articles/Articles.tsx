@@ -1,7 +1,7 @@
-import tipsImage from '@assets/desktop.jpg';
-import nativeImage from '@assets/mobile_app.jpg';
-import Section from '@components/Sections/Section/Section';
 import Grid from '@mui/material/Unstable_Grid2';
+import tipsImage from '../../../assets/desktop.jpg';
+import nativeImage from '../../../assets/mobile_app.jpg';
+import Section from '../Section/Section';
 import Article from './Article';
 import { Italic } from './styles';
 

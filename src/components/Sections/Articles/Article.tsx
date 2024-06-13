@@ -1,7 +1,7 @@
-import { StyledLink } from '@components/Sections/Projects/Project/styles';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 import { ReactNode } from 'react';
+import { StyledLink } from '../Projects/Project/styles';
 import { ArticleImage, DateWritten } from './styles';
 
 interface ArticleProps {

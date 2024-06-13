@@ -1,6 +1,6 @@
-import { projectsData } from '@assets/projects/projectsData';
-import Section from '@components/Sections/Section/Section';
 import Grid from '@mui/material/Unstable_Grid2';
+import { projectsData } from '../../../../assets/projects/projectsData';
+import Section from '../../Section/Section';
 import Project from '../Project/Project';
 
 const FeaturedProject = () => {
