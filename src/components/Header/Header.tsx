@@ -1,6 +1,6 @@
+import profilePic from '@assets/profile_pic.jpg';
+import IconLinks from '@components/IconLinks/IconLinks';
 import { Typography } from '@mui/material';
-import profilePic from '../../assets/coffee.jpg';
-import IconLinks from '../IconLinks';
 import {
   Bold,
   HeaderContentContainer,
