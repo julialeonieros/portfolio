@@ -8,16 +8,18 @@ import { Italic } from './styles';
 const Articles = () => {
   return (
     <Section
-      width='narrow'
-      background='white'
-      heading='articles'
+      width={'narrow'}
+      background={'white'}
+      heading={'articles'}
       headingBackground={true}
     >
       <Grid container spacing={8} mt={3}>
         <Article
-          href='https://julia-leonie-ros.medium.com/tips-for-shy-coders-196c1779bfc9'
+          href={
+            'https://julia-leonie-ros.medium.com/tips-for-shy-coders-196c1779bfc9'
+          }
           src={tipsImage}
-          dateWritten='march 2021'
+          dateWritten={'march 2021'}
           heading={
             <>
               Tips for shy coders:{' '}
@@ -33,10 +35,10 @@ const Articles = () => {
         changing career ...'
         />
         <Article
-          href='https://www.technigo.io/explained/what-is-react-native'
+          href={'https://www.technigo.io/explained/what-is-react-native'}
           src={nativeImage}
-          dateWritten='2021'
-          heading='What is React Native?'
+          dateWritten={'2021'}
+          heading={'What is React Native?'}
           description={`An introduction to React Native. Written for Technigo and Kry's platform "Explained"; articles explaining 
         technical concepts for beginners.`}
         />

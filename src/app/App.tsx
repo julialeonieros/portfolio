@@ -1,7 +1,8 @@
 import CssBaseline from '@mui/material/CssBaseline';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
-import Header from '../components/Header';
+import Header from '../components/Header/Header';
 import Articles from '../components/Sections/Articles/Articles';
+import ForMore from '../components/Sections/ForMore/ForMore';
 import Introduction from '../components/Sections/Introduction/Introduction';
 import FeaturedProject from '../components/Sections/Projects/FeaturedProjects/FeaturedProjects';
 import OtherProjects from '../components/Sections/Projects/OtherProjects/OtherProjects';
@@ -21,6 +22,7 @@ function App() {
       <OtherProjects />
       <Articles />
       <Skills />
+      <ForMore />
     </ThemeProvider>
   );
 }

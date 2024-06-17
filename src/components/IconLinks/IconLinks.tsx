@@ -1,29 +1,43 @@
-import { IconLink } from './styles';
+import { useTheme } from '@mui/material/styles';
+import { StyledLink } from './styles';
 
-const IconLinks = () => {
+interface IconProps {
+  color: 'white' | 'green';
+}
+
+const IconLinks = ({ color }: IconProps) => {
+  const theme = useTheme();
+  const linkColor = color === 'white' ? '#fff' : theme.palette.primary.main;
+
   return (
     <>
-      <IconLink
+      <StyledLink
         title='Länk till LinkedIn'
         href='https://www.linkedin.com/in/julia-ros-95023992/'
         underline='none'
+        color={linkColor}
+        theme={theme}
       >
         <i className='fa-brands fa-linkedin-in'></i>
-      </IconLink>
-      <IconLink
+      </StyledLink>
+      <StyledLink
         title='Länk till Github'
         href='https://github.com/julialeonieros'
         underline='none'
+        color={linkColor}
+        theme={theme}
       >
         <i className='fa-brands fa-github'></i>
-      </IconLink>
-      <IconLink
+      </StyledLink>
+      <StyledLink
         title='Öppna epost'
         href='mailto:julia.leonie.ros@gmail.com'
         underline='none'
+        color={linkColor}
+        theme={theme}
       >
         <i className='fa-regular fa-envelope'></i>
-      </IconLink>
+      </StyledLink>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import { Typography } from '@mui/material';
 import profilePic from '../../assets/coffee.jpg';
-import IconLinks from '../IconLinks';
+import IconLinks from '../IconLinks/IconLinks';
 import {
   Bold,
   HeaderContentContainer,
@@ -17,7 +17,7 @@ const Header = () => {
     <HeroImg>
       <HeaderContentContainer>
         <IconsContainer>
-          <IconLinks />
+          <IconLinks color={'white'} />
         </IconsContainer>
         <HeadingsContainer>
           <Typography variant='h1'>

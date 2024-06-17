@@ -1,17 +1,22 @@
 import Link from '@mui/material/Link';
-import { styled } from '@mui/material/styles';
+import { Theme, styled } from '@mui/material/styles';
 
-export const IconLink = styled(Link)(({ theme }) => ({
-  height: '60px',
-  width: '60px',
-  border: `solid #fff 3px`,
+interface LinkProps {
+  color: string;
+  theme: Theme;
+}
+
+export const StyledLink = styled(Link)(({ color, theme }: LinkProps) => ({
+  height: '65px',
+  width: '65px',
+  border: `solid ${color} 3px`,
   borderRadius: '50%',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   transition: 'all .4s',
   fontSize: 'xx-large',
-  color: '#fff',
+  color: color,
   '&:hover': {
     backgroundColor: '#fff',
     color: theme.palette.primary.main,

@@ -45,7 +45,7 @@ export const IconsContainer = styled(Box)(({ theme }) => ({
   top: 0,
   right: 0,
   backgroundColor: theme.palette.primary.main,
-  padding: theme.spacing(1),
+  padding: theme.spacing(1.5),
 
   [theme.breakpoints.down('sm')]: {
     backgroundColor: 'transparent',

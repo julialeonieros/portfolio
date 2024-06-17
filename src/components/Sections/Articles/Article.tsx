@@ -21,7 +21,7 @@ const Article = ({
 }: ArticleProps) => {
   return (
     <Grid xs={12} sm={6}>
-      <StyledLink title='link to article' href={href}>
+      <StyledLink title={'link to article'} href={href}>
         <ArticleImage src={src} />
         <DateWritten>{dateWritten}</DateWritten>
         <Typography variant='h4'>{heading}</Typography>
