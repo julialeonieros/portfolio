@@ -9,7 +9,6 @@ interface SectionProps {
   heading?: string;
   headingBackground: boolean;
   children: ReactNode;
-  sx?: object;
 }
 
 export const Section = ({
@@ -18,7 +17,6 @@ export const Section = ({
   heading,
   headingBackground,
   children,
-  sx,
 }: SectionProps) => {
   const theme = useTheme();
   return (

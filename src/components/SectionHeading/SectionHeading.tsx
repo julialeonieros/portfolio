@@ -1,6 +1,5 @@
-import Box from '@mui/material/Box';
 import { useTheme } from '@mui/material/styles';
-import { Background, StyledHeading } from './styles';
+import { Background, Container, StyledHeading } from './styles';
 
 interface SectionHeadingProps {
   heading: string;
@@ -11,7 +10,7 @@ const SectionHeading = ({ heading, background }: SectionHeadingProps) => {
   const theme = useTheme();
 
   return (
-    <Box sx={{ textAlign: 'center', mb: '20px' }}>
+    <Container>
       <Background theme={theme} background={background}>
         <StyledHeading
           component='h2'
@@ -20,7 +19,7 @@ const SectionHeading = ({ heading, background }: SectionHeadingProps) => {
           {heading}
         </StyledHeading>
       </Background>
-    </Box>
+    </Container>
   );
 };
 
