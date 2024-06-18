@@ -7,15 +7,15 @@ const theme = createTheme({
       primary: '#1c1b1f',
     },
     primary: {
-      main: '#024434',
+      main: '#024434', // dark green
     },
     secondary: {
-      light: '#fbe3eb',
-      main: '#f8cddb',
-      dark: '#E0707C',
+      light: '#fbe3eb', // light pink
+      main: '#f8cddb', // medium pink
+      dark: '#c14753', // dark pink
     },
     background: {
-      default: '#F4F4F4',
+      default: '#f4f4f4',
       paper: '#fff',
     },
   },
