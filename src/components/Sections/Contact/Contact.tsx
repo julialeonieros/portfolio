@@ -1,6 +1,6 @@
+import { StyledHeading } from '@components/SectionHeading/styles';
+import Section from '@components/Sections/Section/Section';
 import { Box } from '@mui/material';
-import { StyledHeading } from '../../SectionHeading/styles';
-import Section from '../Section/Section';
 import { Content } from './styles';
 
 const Contact = () => {

@@ -1,5 +1,5 @@
+import Section from '@components/Sections/Section/Section';
 import Typography from '@mui/material/Typography';
-import Section from '../Section/Section';
 import { Circle, Line } from './styles';
 
 const Introduction = () => {

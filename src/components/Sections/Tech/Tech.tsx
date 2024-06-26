@@ -1,4 +1,4 @@
-import Section from '../Section/Section';
+import Section from '@components/Sections/Section/Section';
 import { StyledList, StyledListItem } from './styles';
 
 const Tech = () => {

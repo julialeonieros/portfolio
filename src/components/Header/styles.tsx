@@ -1,6 +1,6 @@
+import backgroundImg from '@assets/forest.jpg';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
-import backgroundImg from '../../assets/forest.jpg';
 
 export const HeroImg = styled('header')(({ theme }) => ({
   position: 'relative',

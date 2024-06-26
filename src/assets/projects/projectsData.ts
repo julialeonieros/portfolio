@@ -1,8 +1,8 @@
-import magazineimg from '../../assets/projects/magazine.png';
-import moviesImg from '../../assets/projects/movies.png';
-import recipesImg from '../../assets/projects/recipes.png';
-import todoImg from '../../assets/projects/todo_app.png';
-import { Tag } from '../../enums/Enums';
+import magazineimg from '@assets/projects/magazine.png';
+import moviesImg from '@assets/projects/movies.png';
+import recipesImg from '@assets/projects/recipes.png';
+import todoImg from '@assets/projects/todo_app.png';
+import { Tag } from '@enums/Enums';
 
 export interface ProjectsInterface {
   title: string;
