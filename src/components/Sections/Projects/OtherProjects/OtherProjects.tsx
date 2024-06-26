@@ -12,14 +12,14 @@ const OtherProjects = () => {
     >
       {OtherProjectsData.map((project) => (
         <Project
+          key={project.title}
           title={project.title}
           href={project.href}
           heading={project.heading}
           description={project.description}
           tags={project.tags}
           gitHubHref={project.gitHubHref}
-          sx={{ marginTop: '40px' }}
-          key={project.title}
+          sx={{ marginBottom: '40px' }}
         />
       ))}
     </Section>

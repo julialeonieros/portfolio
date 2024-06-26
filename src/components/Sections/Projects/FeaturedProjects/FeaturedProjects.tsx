@@ -11,7 +11,7 @@ const FeaturedProject = () => {
       heading={'featured projects'}
       headingBackground={true}
     >
-      <Grid container spacing={6} mt={2}>
+      <Grid container spacing={6} mt={0}>
         {projectsData.map((project) => (
           <Grid key={project.title} xs={12} sm={6}>
             <Project
