@@ -1,4 +1,4 @@
-import { Tag } from '@enums/Enums';
+import { Tag } from '../../enums/Enums';
 
 export interface OtherProjectsInterface {
   title: string;

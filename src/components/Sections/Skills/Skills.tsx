@@ -1,6 +1,6 @@
-import Section from '@components/Sections/Section/Section';
 import { List, ListItemText, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
+import Section from '../Section/Section';
 
 const skillsToolbox = [
   'VSCode',

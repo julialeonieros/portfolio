@@ -1,6 +1,6 @@
-import SectionHeading from '@components/SectionHeading/SectionHeading';
 import { useTheme } from '@mui/material/styles';
 import { ReactNode } from 'react';
+import SectionHeading from '../../SectionHeading/SectionHeading';
 import { ContentContainer, StyledSection } from './styles';
 
 interface SectionProps {

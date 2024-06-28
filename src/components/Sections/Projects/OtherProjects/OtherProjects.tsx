@@ -1,6 +1,6 @@
-import { OtherProjectsData } from '@assets/projects/otherProjectsData';
-import Project from '@components/Sections/Projects/Project/Project';
-import Section from '@components/Sections/Section/Section';
+import { OtherProjectsData } from '../../../../assets/projects/otherProjectsData';
+import Section from '../../Section/Section';
+import Project from '../Project/Project';
 
 const OtherProjects = () => {
   return (

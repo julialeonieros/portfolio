@@ -1,5 +1,5 @@
-import IconLinks from '@components/IconLinks/IconLinks';
-import Section from '@components/Sections/Section/Section';
+import IconLinks from '../../IconLinks/IconLinks';
+import Section from '../Section/Section';
 import { Container } from './styles';
 
 const ForMore = () => {
