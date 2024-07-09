@@ -3,7 +3,6 @@ import tipsImage from '../../../assets/desktop.jpg';
 import nativeImage from '../../../assets/mobile_app.jpg';
 import Section from '../Section/Section';
 import Article from './Article';
-import { Italic } from './styles';
 
 const Articles = () => {
   return (
@@ -23,9 +22,7 @@ const Articles = () => {
           heading={
             <>
               Tips for shy coders:{' '}
-              <Italic>
-                Some thoughts after two months on a frontend bootcamp
-              </Italic>
+              <i>Some thoughts after two months on a frontend bootcamp</i>
             </>
           }
           description='So, about six months ago I got an email from Technigo telling me

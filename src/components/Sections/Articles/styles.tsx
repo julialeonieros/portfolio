@@ -1,13 +1,9 @@
 import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 
-export const Italic = styled('span')(() => ({
-  fontStyle: 'italic',
-}));
-
 export const ArticleImage = styled('img')(() => ({
   width: '100%',
-  height: '210px',
+  height: 'auto',
   overflow: 'hidden',
 }));
 
