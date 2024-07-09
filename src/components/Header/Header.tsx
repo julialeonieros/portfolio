@@ -26,7 +26,7 @@ const Header = () => {
           <SubHeading1> frontend developer</SubHeading1>
           <SubHeading2>+ accessibility</SubHeading2>
         </HeadingsContainer>
-        <ProfileImg src={profilePic} />
+        <ProfileImg src={profilePic} alt='Profile image of Julia' />
       </HeaderContentContainer>
     </HeroImg>
   );

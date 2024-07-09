@@ -18,6 +18,7 @@ const Articles = () => {
             'https://julia-leonie-ros.medium.com/tips-for-shy-coders-196c1779bfc9'
           }
           src={tipsImage}
+          alt={'A desk with a laptop and lamp'}
           dateWritten={'march 2021'}
           heading={
             <>
@@ -34,6 +35,7 @@ const Articles = () => {
         <Article
           href={'https://www.technigo.io/explained/what-is-react-native'}
           src={nativeImage}
+          alt={'A hand holding a mobile phone over a colorful background'}
           dateWritten={'2021'}
           heading={'What is React Native?'}
           description={`An introduction to React Native. Written for Technigo and Kry's platform "Explained"; articles explaining 

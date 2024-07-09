@@ -10,6 +10,7 @@ interface ArticleProps {
   dateWritten: string;
   heading: ReactNode;
   description: string;
+  alt: string;
 }
 
 const Article = ({
@@ -18,11 +19,12 @@ const Article = ({
   dateWritten,
   heading,
   description,
+  alt,
 }: ArticleProps) => {
   return (
     <Grid xs={12} sm={6}>
       <StyledLink title={'link to article'} href={href}>
-        <ArticleImage src={src} />
+        <ArticleImage src={src} alt={alt} />
         <DateWritten>{dateWritten}</DateWritten>
         <Typography variant='h4'>{heading}</Typography>
         <Typography>{description}</Typography>
