@@ -1,6 +1,7 @@
-import { List, ListItemText, Typography } from '@mui/material';
+import { List, Typography } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import Section from '../Section/Section';
+import { StyledListitem } from './styles';
 
 const skillsToolbox = [
   'VSCode',
@@ -50,7 +51,7 @@ const Skills = () => {
           </Typography>
           <List>
             {skillsToolbox.map((skill) => {
-              return <ListItemText key={skill}>{skill}</ListItemText>;
+              return <StyledListitem key={skill}>{skill}</StyledListitem>;
             })}
           </List>
         </Grid>
@@ -60,7 +61,7 @@ const Skills = () => {
           </Typography>
           <List>
             {skillsCode.map((skill) => {
-              return <ListItemText key={skill}>{skill}</ListItemText>;
+              return <StyledListitem key={skill}>{skill}</StyledListitem>;
             })}
           </List>
         </Grid>
@@ -70,7 +71,7 @@ const Skills = () => {
           </Typography>
           <List>
             {skillsMore.map((skill) => {
-              return <ListItemText key={skill}>{skill}</ListItemText>;
+              return <StyledListitem key={skill}>{skill}</StyledListitem>;
             })}
           </List>
         </Grid>

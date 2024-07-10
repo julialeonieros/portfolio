@@ -40,7 +40,9 @@ const Project = ({
             </StyledListItem>
           );
         })}
-        <GitHubTag href={gitHubHref} />
+        <StyledListItem>
+          <GitHubTag href={gitHubHref} />
+        </StyledListItem>
       </TagsContainer>
     </Box>
   );
