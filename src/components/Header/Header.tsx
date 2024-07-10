@@ -16,9 +16,6 @@ const Header = () => {
   return (
     <HeroImg>
       <HeaderContentContainer>
-        <IconsContainer>
-          <IconLinks color={'white'} />
-        </IconsContainer>
         <HeadingsContainer>
           <Typography variant='h1' fontWeight={500}>
             PORTFOLIO: <Bold>JULIA ROS</Bold>
@@ -26,7 +23,10 @@ const Header = () => {
           <SubHeading1> frontend developer</SubHeading1>
           <SubHeading2>+ accessibility</SubHeading2>
         </HeadingsContainer>
-        <ProfileImg src={profilePic} alt='Profile image of Julia' />
+        <IconsContainer>
+          <IconLinks color={'white'} />
+        </IconsContainer>
+        <ProfileImg src={profilePic} lang='en' alt='Profile image of Julia' />
       </HeaderContentContainer>
     </HeroImg>
   );
