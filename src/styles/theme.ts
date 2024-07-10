@@ -45,14 +45,6 @@ const theme = createTheme({
       lineHeight: '29px',
       textTransform: 'uppercase',
     },
-    h4: {
-      fontFamily: ['Roboto', 'sans-serif'].join(','),
-      fontWeight: 700,
-      fontSize: '1.3rem',
-      color: '#000',
-      marginTop: '0px',
-      lineHeight: '29px',
-    },
     body1: {
       fontSize: '1.06rem',
       fontWeight: 400,

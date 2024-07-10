@@ -2,7 +2,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 import { ReactNode } from 'react';
 import { StyledLink } from '../Projects/Project/styles';
-import { ArticleImage, DateWritten } from './styles';
+import { ArticleHeading, ArticleImage, DateWritten } from './styles';
 
 interface ArticleProps {
   href: string;
@@ -26,7 +26,7 @@ const Article = ({
       <StyledLink title={'link to article'} href={href}>
         <ArticleImage src={src} alt={alt} />
         <DateWritten>{dateWritten}</DateWritten>
-        <Typography variant='h4'>{heading}</Typography>
+        <ArticleHeading component='h3'>{heading}</ArticleHeading>
         <Typography>{description}</Typography>
       </StyledLink>
     </Grid>
