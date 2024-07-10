@@ -23,7 +23,7 @@ export const StyledImage = styled('img')(() => ({
   filter: 'brightness(40%)',
   transition: 'transform.5s',
   '&:hover': {
-    transform: `scale(1.1) translateZ(1px)`,
+    transform: `scale(1.1) translateZ(1px) rotate(0.02deg)`,
     filter: 'brightness(100%)',
   },
 }));
