@@ -11,7 +11,7 @@ const Contact = () => {
       </StyledHeading>
       <Box mt={3} mb={5}>
         <Content>Julia Ros</Content>
-        <Content>+46 70-296 86 05</Content>
+        <Content lang='en'>+46 70-296 86 05</Content>
         <Content>julia.leonie.ros@gmail.com</Content>
       </Box>
     </Section>
