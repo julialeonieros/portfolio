@@ -1,7 +1,7 @@
 import magazineimg from '../../assets/projects/magazine.png';
-import moviesImg from '../../assets/projects/movies.png';
 import recipesImg from '../../assets/projects/recipes.png';
 import todoImg from '../../assets/projects/todo_app.png';
+import nativeImg from '../../assets/projects/magic8ball.png';
 import { Tag } from '../../enums/Enums';
 
 export interface ProjectsInterface {
@@ -44,14 +44,15 @@ export const projectsData: ProjectsInterface[] = [
     gitHubHref: 'https://github.com/julialeonieros/project-todos',
   },
   {
-    title: 'link to popular movies site',
-    href: 'https://top-moviess.netlify.app/',
-    src: moviesImg,
-    heading: 'movie site that fetches from api, built with react.',
+    title: 'link to React Native app',
+    href: 'https://snack.expo.io/@julialeonieros/magic-8-ball',
+    src: nativeImg,
+    heading: 'react native app.',
     description:
-      'A site that lists the most popular movies at the moment. Built with React using JSX and CSS.',
-    tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.APIs],
-    gitHubHref: 'https://github.com/julialeonieros/project-movies',
+      'A minimalist version of the magic 8-ball. Built with React Native using JSX, Styled Components and shake sensor.',
+    tags: [Tag.React_Native, Tag.Styled_Components, Tag.JSX, Tag.Design],
+    gitHubHref:
+      'https://github.com/julialeonieros/project-react-native-app/tree/shake-sensor',
   },
   {
     title: 'link to magazine site',
@@ -59,7 +60,7 @@ export const projectsData: ProjectsInterface[] = [
     src: magazineimg,
     heading: 'magazine site built with css/flexbox.',
     description:
-      'My first web project: a responsive web site for a fictive magazine, using HTML and CSS.',
+      'My first web project: a responsive web site for a fictive magazine, using HTML and CSS, and my own design.',
     tags: [Tag.HTML, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-news-site',
   },

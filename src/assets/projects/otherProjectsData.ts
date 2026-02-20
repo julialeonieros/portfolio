@@ -11,16 +11,6 @@ export interface OtherProjectsInterface {
 
 export const OtherProjectsData: OtherProjectsInterface[] = [
   {
-    title: 'link to React Native app',
-    href: 'https://snack.expo.io/@julialeonieros/magic-8-ball',
-    heading: 'react native app.',
-    description:
-      'A minimalist version of the magic 8-ball. Built with React Native using JSX, Styled Components and shake sensor.',
-    tags: [Tag.React_Native, Tag.Styled_Components, Tag.JSX, Tag.Design],
-    gitHubHref:
-      'https://github.com/julialeonieros/project-react-native-app/tree/shake-sensor',
-  },
-  {
     title: 'link to Happy Thoughts app',
     href: 'https://determined-engelbart-a7f7f6.netlify.app/',
     heading: 'happy thoughts.',
@@ -46,5 +36,14 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
       'Responsive web site that shows the weather, using HTML, CSS, vanilla JS and API:s.',
     tags: [Tag.HTML, Tag.CSS, Tag.JS, Tag.APIs],
     gitHubHref: '',
+  },
+  {
+    title: 'link to popular movies site',
+    href: 'https://top-moviess.netlify.app/',
+    heading: 'movie site that fetches from api, built with react.',
+    description:
+      'A site that lists the most popular movies at the moment. Built with React using JSX and CSS.',
+    tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.APIs],
+    gitHubHref: 'https://github.com/julialeonieros/project-movies',
   },
 ];

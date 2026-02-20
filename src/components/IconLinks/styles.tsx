@@ -6,6 +6,8 @@ interface LinkProps {
   theme: Theme;
 }
 
+console.log();
+
 export const StyledLink = styled(Link)(({ color, theme }: LinkProps) => ({
   height: '65px',
   width: '65px',
@@ -18,8 +20,8 @@ export const StyledLink = styled(Link)(({ color, theme }: LinkProps) => ({
   fontSize: 'xx-large',
   color: color,
   '&:hover': {
-    backgroundColor: '#fff',
-    color: theme.palette.primary.main,
+    backgroundColor: `${color}`,
+    color: `${color === '#fff' ? theme.palette.primary.main : '#fff'}`,
   },
 
   [theme.breakpoints.down('sm')]: {
