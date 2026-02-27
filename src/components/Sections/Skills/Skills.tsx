@@ -34,6 +34,7 @@ const skillsMore = [
   'Typography',
   'Layout',
   'Dynamics 365',
+  'Power Automate'
 ];
 
 const Skills = () => {

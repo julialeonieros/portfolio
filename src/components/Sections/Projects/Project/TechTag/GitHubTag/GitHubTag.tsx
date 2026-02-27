@@ -11,6 +11,7 @@ const GitHubTag = ({ href }: TagProps) => {
       title='Link to the projects repository in Github'
       href={href}
       underline='none'
+      target='_blank'
     >
       <Container>
         <i className='fab fa-github'></i>

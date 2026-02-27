@@ -11,4 +11,5 @@ export enum Tag {
   Design = 'UX/UI-design',
   React_Native = 'React Native',
   Styled_Components = 'Styled Components',
+  TS = 'TypeScript',
 }

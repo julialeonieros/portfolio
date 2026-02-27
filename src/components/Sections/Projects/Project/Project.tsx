@@ -28,7 +28,7 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <Box sx={sx}>
-      <StyledLink title={title} href={href}>
+      <StyledLink title={title} href={href} target='_blank'>
         {src && <ProjectImg src={src} />}
         <ProjectDescription heading={heading} description={description} />
       </StyledLink>
