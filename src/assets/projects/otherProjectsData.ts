@@ -11,6 +11,14 @@ export interface OtherProjectsInterface {
 
 export const OtherProjectsData: OtherProjectsInterface[] = [
   {
+    title: 'link to this portfolio',
+    href: 'https://julia-ros-portfolio.netlify.app/',
+    heading: 'this portfolio.',
+    description: 'The portfolio was originally made during the bootcamp with HTML and CSS. This is an updated version made with React and TypeScript.',
+    tags: [Tag.React, Tag.JSX, Tag.MUI, Tag.TS, Tag.Styled_Components],
+    gitHubHref: 'https://github.com/julialeonieros/portfolio',
+  },
+  {
     title: 'link to Happy Thoughts app',
     href: 'https://determined-engelbart-a7f7f6.netlify.app/',
     heading: 'happy thoughts.',
@@ -28,18 +36,18 @@ export const OtherProjectsData: OtherProjectsInterface[] = [
     tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-survey',
   },
-  {
-    title: 'link to weather app',
-    href: 'https://clever-murdock-6c222e.netlify.app/',
-    heading: 'weather app.',
-    description:
-      'Responsive web site that shows the weather, using HTML, CSS, vanilla JS and API:s.',
-    tags: [Tag.HTML, Tag.CSS, Tag.JS, Tag.APIs],
-    gitHubHref: '',
-  },
+  // {
+  //   title: 'link to weather app',
+  //   href: 'https://clever-murdock-6c222e.netlify.app/',
+  //   heading: 'weather app.',
+  //   description:
+  //     'Responsive web site that shows the weather, using HTML, CSS, vanilla JS and API:s.',
+  //   tags: [Tag.HTML, Tag.CSS, Tag.JS, Tag.APIs],
+  //   gitHubHref: '',
+  // },
   {
     title: 'link to popular movies site',
-    href: 'https://top-moviess.netlify.app/',
+    href: 'https://top-movies-us.netlify.app/',
     heading: 'movie site that fetches from api, built with react.',
     description:
       'A site that lists the most popular movies at the moment. Built with React using JSX and CSS.',

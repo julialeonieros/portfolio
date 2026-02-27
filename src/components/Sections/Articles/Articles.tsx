@@ -27,10 +27,7 @@ const Articles = () => {
             </>
           }
           description='So, about six months ago I got an email from Technigo telling me
-        they’ve accepted me into their bootcamp; 24 weeks of learning
-        HTML/CSS, JavaScript, React, JSX (and a bunch of things I’d never
-        even heard of), at a very high pace, with the goal of completely
-        changing career ...'
+        they’ve accepted me into their bootcamp; 24 weeks of ...'
         />
         <Article
           href={'https://www.technigo.io/explained/what-is-react-native'}

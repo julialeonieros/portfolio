@@ -1,7 +1,8 @@
 import magazineimg from '../../assets/projects/magazine.png';
+// import moviesImg from '../../assets/projects/movies.png';  
 import recipesImg from '../../assets/projects/recipes.png';
 import todoImg from '../../assets/projects/todo_app.png';
-import nativeImg from '../../assets/projects/magic8ball.png';
+import nativeImg from '../../assets/projects/magic8ball.png'
 import { Tag } from '../../enums/Enums';
 
 export interface ProjectsInterface {
@@ -43,6 +44,16 @@ export const projectsData: ProjectsInterface[] = [
     tags: [Tag.React, Tag.Redux, Tag.JSX, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-todos',
   },
+  // {
+  //   title: 'link to popular movies site',
+  //   href: 'https://top-moviess.netlify.app/',
+  //   src: moviesImg,
+  //   heading: 'movie site that fetches from api, built with react.',
+  //   description:
+  //     'A site that lists the most popular movies at the moment. Built with React using JSX and CSS.',
+  //   tags: [Tag.React, Tag.JSX, Tag.CSS, Tag.APIs],
+  //   gitHubHref: 'https://github.com/julialeonieros/project-movies',
+  // },
   {
     title: 'link to React Native app',
     href: 'https://snack.expo.io/@julialeonieros/magic-8-ball',
