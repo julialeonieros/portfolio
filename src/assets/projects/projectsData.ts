@@ -11,6 +11,7 @@ export interface ProjectsInterface {
   src: string;
   heading: string;
   description: string;
+  comment?: string;
   tags: string[];
   gitHubHref: string;
 }
@@ -20,9 +21,10 @@ export const projectsData: ProjectsInterface[] = [
     title: 'link to recipe site',
     href: 'https://friluftsmat.netlify.app/',
     src: recipesImg,
-    heading: 'the final project: recipe bank with post-function.',
+    heading: 'the final project: recipe bank with post-function.*',
     description:
       'The final project, done pair-programming. A recipe site with filtering and post-function. Frontend built with React, Redux, Styled components, Material UI, Cloudinary and HTML/CSS/JSX. Backend built with RESTful API, Express, MongoDB and Mongoose.',
+    comment: 'The backend is currently down due to hosting issues.',
     tags: [
       Tag.React,
       Tag.Redux,
@@ -38,9 +40,10 @@ export const projectsData: ProjectsInterface[] = [
     title: 'link to todo app',
     href: 'https://zealous-ardinghelli-8278dd.netlify.app/',
     src: todoImg,
-    heading: 'todo app built with react.',
+    heading: 'todo app built with react.*',
     description:
       'Responsive app where you can write your daily tasks. Built with React using HTML, CSS/Styled Components, JSX, Redux/Redux Toolkit and Lottie Animation.',
+    comment: 'Looks best in mobile- and tablet view.',
     tags: [Tag.React, Tag.Redux, Tag.JSX, Tag.CSS, Tag.Design],
     gitHubHref: 'https://github.com/julialeonieros/project-todos',
   },
@@ -58,9 +61,10 @@ export const projectsData: ProjectsInterface[] = [
     title: 'link to React Native app',
     href: 'https://snack.expo.io/@julialeonieros/magic-8-ball',
     src: nativeImg,
-    heading: 'react native app.',
+    heading: 'react native app.*',
     description:
       'A minimalist version of the magic 8-ball. Built with React Native using JSX, Styled Components and shake sensor.',
+    comment: 'Remade to be used in webformat.',
     tags: [Tag.React_Native, Tag.Styled_Components, Tag.JSX, Tag.Design],
     gitHubHref:
       'https://github.com/julialeonieros/project-react-native-app/tree/shake-sensor',

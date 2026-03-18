@@ -22,7 +22,7 @@ const Articles = () => {
           dateWritten={'march 2021'}
           heading={
             <>
-              Tips for shy coders:{' '}
+              Tips for shy coders.{' '}
               <i>Some thoughts after two months on a frontend bootcamp</i>
             </>
           }

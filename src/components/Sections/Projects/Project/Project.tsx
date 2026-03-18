@@ -14,6 +14,7 @@ interface ProjectProps {
   tags: string[];
   gitHubHref: string;
   sx?: object;
+  comment?: string;
 }
 
 const Project = ({
@@ -25,12 +26,13 @@ const Project = ({
   tags,
   gitHubHref,
   sx,
+  comment
 }: ProjectProps) => {
   return (
     <Box sx={sx}>
       <StyledLink title={title} href={href} target='_blank'>
         {src && <ProjectImg src={src} />}
-        <ProjectDescription heading={heading} description={description} />
+        <ProjectDescription heading={heading} description={description} comment={comment} />
       </StyledLink>
       <TagsContainer>
         {tags.map((tag) => {

@@ -20,6 +20,7 @@ const FeaturedProject = () => {
               src={project.src}
               heading={project.heading}
               description={project.description}
+              comment={project.comment}
               tags={project.tags}
               gitHubHref={project.gitHubHref}
             />

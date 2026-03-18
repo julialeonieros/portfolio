@@ -17,6 +17,7 @@ const OtherProjects = () => {
           href={project.href}
           heading={project.heading}
           description={project.description}
+          comment={project.comment}
           tags={project.tags}
           gitHubHref={project.gitHubHref}
           sx={{ marginBottom: '40px' }}
